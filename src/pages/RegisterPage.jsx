@@ -18,12 +18,9 @@ function RegisterPage() {
         })
             .then(response => {
                 if (response.ok) {
-                    // 在庫情報が正常に追加された場合、フルーツデータを再取得して更新する
-                    // return fetchFruitData();
                     console.log('新規登録が完了しました！');
                     navigate('/login');  // 新規登録が成功したらログインページに遷移する
                 } else {
-                    // エラーメッセージを表示するなどの処理を行う
                     console.error('Failed to add stock');
                 }
             })
